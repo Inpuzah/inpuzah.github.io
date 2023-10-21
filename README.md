@@ -1,2 +1,0 @@
-# inpuzah.github.io
-website
