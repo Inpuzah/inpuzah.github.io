@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="app.css"/>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="programs.html">Programs</a></li>
+  <li><a href="info.html">Informations</a></li>
+  <li><a href="about.html">About Me</a></li>
+</ul>
+
+<h1>Prorgams</h1>
+<h3>This page contains useful programs in C++</h3>
+
+<h3>
+  Chatper 6 Lab 1
+</h3>
+
+<pre>
+  <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+   int numInts;
+   cin &gt;&gt; numInts;
+   int userInts[numInts];   // An array to hold the user's input integers
+   int i;
+   
+   for (i=0; i&lt;numInts; ++i) {
+      cin &gt;&gt; userInts[i];
+   }
+   
+   for (i=numInts-1; i&gt;=0; --i) {
+      cout &lt;&lt; userInts[i] &lt;&lt; &quot; &quot;;
+   }
+   cout &lt;&lt; endl;
+   return 0;
+}
+
+  </code>
+</pre>
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
