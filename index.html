@@ -7,9 +7,9 @@
 
 <ul>
   <li><a href="default.asp">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
+  <li><a href="news.asp">This doesn't do anything yet</a></li>
+  <li><a href="contact.asp">this doesn't either</a></li>
+  <li><a href="about.asp">Not even this lol</a></li>
 </ul>
 
 <h1>Shane's Website</h1>
@@ -18,6 +18,38 @@
 <p>okay okay okay... good lord yes I know it's a basic HTML website.</p>
 <p> </p>
 <p>Seriously cut me some slack and let me learn HTML and CSS. give it a few months and I'll spiffy it all up in no time.</p>
+<p></p>
+<p>Last updated: 10/23/2023</p>
+
+
+<h3>
+  Chatper 6 Lab 1
+</h3>
+
+<pre>
+  <code>
+    #include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+   int numInts;
+   cin &gt;&gt; numInts;
+   int userInts[numInts];   // An array to hold the user's input integers
+   int i;
+   
+   for (i=0; i&lt;numInts; ++i) {
+      cin &gt;&gt; userInts[i];
+   }
+   
+   for (i=numInts-1; i&gt;=0; --i) {
+      cout &lt;&lt; userInts[i] &lt;&lt; &quot; &quot;;
+   }
+   cout &lt;&lt; endl;
+   return 0;
+}
+
+  </code>
+</pre>
 
 <button onClick="alertButton()">Here is a button</button>
 
