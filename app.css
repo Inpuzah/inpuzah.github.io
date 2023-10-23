@@ -1,12 +1,15 @@
 html {
-    margin: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1 {
-    color : orange
+    color : orange;
     
 }
 h3 {
-    color: brown
+    color: brown;
 }
 
 body {
