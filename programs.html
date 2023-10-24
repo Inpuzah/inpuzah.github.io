@@ -46,6 +46,60 @@ int main() {
 </pre>
 
 
+
+<h3>
+    Chatper 6 Lab 2
+  </h3>
+  
+  <pre>
+    <code>
+        #include &lt;iostream&gt;
+        #include &lt;iomanip&gt;              // For setprecision
+        using namespace std;
+        
+        int main() {
+        
+           double weights[4];
+           int i;
+           double sum = 0.0;
+           double avg = 0.0;
+           double max = 0.0;
+           
+           cout &lt;&lt; fixed &lt;&lt; setprecision(2);
+           
+           for (i=1; i&lt;6; ++i) {
+              cout &lt;&lt; &quot;Enter weight &quot; &lt;&lt; i &lt;&lt; &quot;:&quot; &lt;&lt; endl;
+              cin &gt;&gt; weights[i-1];
+              //cout &lt;&lt; weights[i-1] &lt;&lt; endl;
+           }
+           cout &lt;&lt; &quot;You entered: &quot;;
+           for (i=0; i&lt;5; ++i) {
+              cout &lt;&lt; weights[i] &lt;&lt; &quot; &quot;;
+           }
+           cout &lt;&lt; endl &lt;&lt; endl;
+           
+           for (i=0; i&lt;5; ++i) {
+              sum = sum + weights[i];
+              if (weights[i] &gt; max) {
+                 max = weights[i];
+              }
+           }
+           
+           //cout &lt;&lt; fixed &lt;&lt; setprecision(2);
+           cout &lt;&lt; &quot;Total weight: &quot; &lt;&lt; sum &lt;&lt; endl;
+           
+           avg = sum / 5;
+           cout &lt;&lt; &quot;Average weight: &quot; &lt;&lt; avg &lt;&lt; endl;
+           
+           cout &lt;&lt; &quot;Max weight: &quot; &lt;&lt; max &lt;&lt; endl;
+        
+           return 0;
+        }
+  
+    </code>
+  </pre>
+
+
 </body>
 
 <script src="app.js"></script>
